@@ -1,0 +1,45 @@
+{
+  "name": "PostFeedback",
+  "plural": "PostFeedbacks",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ratings": {
+      "type": "number",
+      "required": true
+    },
+    "comment": {
+      "type": "string",
+      "required": true
+    },
+    "sentiment": {
+      "type": "string",
+      "required": false
+    },
+    "sentiment-postive": {
+      "type": "number",
+      "required": false
+    },
+    "sentiment-nuetral": {
+      "type": "number",
+      "required": false
+    },
+    "sentiment-negative": {
+      "type": "number",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "post": {
+      "type": "belongsTo",
+      "model": "Post",
+      "foreignKey": "postId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

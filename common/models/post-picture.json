@@ -1,0 +1,25 @@
+{
+  "name": "PostPicture",
+  "plural": "PostPictures",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "filename": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "post": {
+      "type": "belongsTo",
+      "model": "Post",
+      "foreignKey": "postId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

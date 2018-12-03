@@ -1,0 +1,53 @@
+{
+  "name": "user",
+  "plural": "users",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "displayname": {
+      "type": "string",
+      "required": false
+    },
+    "type": {
+      "type": "string",
+      "required": false,
+      "default": "normal"
+    },
+    "picture": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "post-feedbacks": {
+      "type": "hasMany",
+      "model": "PostFeedback",
+      "foreignKey": "userId"
+    },
+    "store-feedbacks": {
+      "type": "hasMany",
+      "model": "StoreFeedback",
+      "foreignKey": "userId"
+    },
+    "stores": {
+      "type": "hasMany",
+      "model": "Store",
+      "foreignKey": "userId"
+    },
+    "posts": {
+      "type": "hasMany",
+      "model": "Posts",
+      "foreignKey": "userId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

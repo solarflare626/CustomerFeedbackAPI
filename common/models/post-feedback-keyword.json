@@ -1,0 +1,29 @@
+{
+  "name": "PostFeedbackKeyword",
+  "plural": "PostFeedbackKeywords",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "keyword": {
+      "type": "string",
+      "required": true
+    },
+    "count": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "post": {
+      "type": "belongsTo",
+      "model": "Post",
+      "foreignKey": "postId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

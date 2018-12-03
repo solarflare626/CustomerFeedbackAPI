@@ -1,0 +1,49 @@
+{
+  "name": "Post",
+  "plural": "Posts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "store": {
+      "type": "belongsTo",
+      "model": "Store",
+      "foreignKey": "storeId"
+    },
+    "owner": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "userId"
+    },
+    "pictures": {
+      "type": "hasMany",
+      "model": "PostPicture",
+      "foreignKey": "postId"
+    },
+    "feedbacks": {
+      "type": "hasMany",
+      "model": "PostFeedback",
+      "foreignKey": "postId"
+    },
+    "feedback-keywords": {
+      "type": "hasMany",
+      "model": "PostFeedbackKeyword",
+      "foreignKey": "postId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

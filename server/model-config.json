@@ -1,0 +1,78 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "user": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Store": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Post": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "CustomToken": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "StoreFeedback": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "PostFeedback": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "StorePicture": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "PostPicture": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "StoreFeedbackKeyword": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "PostFeedbackKeyword": {
+    "dataSource": "postgres",
+    "public": true
+  }
+}

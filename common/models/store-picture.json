@@ -1,0 +1,25 @@
+{
+  "name": "StorePicture",
+  "plural": "StorePictures",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "filename": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "store": {
+      "type": "belongsTo",
+      "model": "Store",
+      "foreignKey": "storeId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

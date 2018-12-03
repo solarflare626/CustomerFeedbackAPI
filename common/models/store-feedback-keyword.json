@@ -1,0 +1,29 @@
+{
+  "name": "StoreFeedbackKeyword",
+  "plural": "StoreFeedbackKeywords",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "keyword": {
+      "type": "string",
+      "required": true
+    },
+    "count": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "store": {
+      "type": "belongsTo",
+      "model": "Store",
+      "foreignKey": "storeId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

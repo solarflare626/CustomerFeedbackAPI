@@ -1,0 +1,57 @@
+{
+  "name": "Store",
+  "plural": "Stores",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": false
+    },
+    "address": {
+      "type": "string",
+      "required": false
+    },
+    "ratings": {
+      "type": "number",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "owner": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "userId"
+    },
+    "posts": {
+      "type": "hasMany",
+      "model": "Post",
+      "foreignKey": "storeId"
+    },
+    "pictures": {
+      "type": "hasMany",
+      "model": "StorePicture",
+      "foreignKey": "storeId"
+    },
+    "feedbacks": {
+      "type": "hasMany",
+      "model": "StoreFeedback",
+      "foreignKey": "storeId"
+    },
+    "feedbacks-keywords": {
+      "type": "hasMany",
+      "model": "StoreFeedbackKeyword",
+      "foreignKey": "storeId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
