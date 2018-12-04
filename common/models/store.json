@@ -26,10 +26,10 @@
   },
   "validations": [],
   "relations": {
-    "owner": {
+    "user": {
       "type": "belongsTo",
       "model": "user",
-      "foreignKey": "userId"
+      "foreignKey": ""
     },
     "posts": {
       "type": "hasMany",
@@ -46,9 +46,9 @@
       "model": "StoreFeedback",
       "foreignKey": "storeId"
     },
-    "feedbacks-keywords": {
+    "keywords": {
       "type": "hasMany",
-      "model": "StoreFeedbackKeyword",
+      "model": "StoreKeyword",
       "foreignKey": "storeId"
     }
   },

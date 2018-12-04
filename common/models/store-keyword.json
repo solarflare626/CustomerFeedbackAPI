@@ -1,6 +1,6 @@
 {
-  "name": "PostFeedbackKeyword",
-  "plural": "PostFeedbackKeywords",
+  "name": "StoreKeyword",
+  "plural": "StoreKeywords",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -18,10 +18,10 @@
   },
   "validations": [],
   "relations": {
-    "post": {
+    "store": {
       "type": "belongsTo",
-      "model": "Post",
-      "foreignKey": "postId"
+      "model": "Store",
+      "foreignKey": "storeId"
     }
   },
   "acls": [],

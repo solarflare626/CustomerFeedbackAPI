@@ -38,9 +38,9 @@
       "model": "PostFeedback",
       "foreignKey": "postId"
     },
-    "feedback-keywords": {
+    "keywords": {
       "type": "hasMany",
-      "model": "PostFeedbackKeyword",
+      "model": "PostKeyword",
       "foreignKey": "postId"
     }
   },

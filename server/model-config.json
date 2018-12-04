@@ -13,9 +13,6 @@
       "./mixins"
     ]
   },
-  "User": {
-    "dataSource": "db"
-  },
   "AccessToken": {
     "dataSource": "db",
     "public": false
@@ -36,43 +33,43 @@
     "public": false
   },
   "user": {
-    "dataSource": "postgres",
+    "dataSource": "mysql",
     "public": true
   },
   "Store": {
-    "dataSource": "postgres",
+    "dataSource": "mysql",
     "public": true
   },
   "Post": {
-    "dataSource": "postgres",
+    "dataSource": "mysql",
     "public": true
   },
   "CustomToken": {
-    "dataSource": "postgres",
+    "dataSource": "mysql",
     "public": true
   },
   "StoreFeedback": {
-    "dataSource": "postgres",
+    "dataSource": "mysql",
     "public": true
   },
   "PostFeedback": {
-    "dataSource": "postgres",
+    "dataSource": "mysql",
     "public": true
   },
   "StorePicture": {
-    "dataSource": "postgres",
+    "dataSource": "mysql",
     "public": true
   },
   "PostPicture": {
-    "dataSource": "postgres",
+    "dataSource": "mysql",
     "public": true
   },
-  "StoreFeedbackKeyword": {
-    "dataSource": "postgres",
+  "StoreKeyword": {
+    "dataSource": "mysql",
     "public": true
   },
-  "PostFeedbackKeyword": {
-    "dataSource": "postgres",
+  "PostKeyword": {
+    "dataSource": "mysql",
     "public": true
   }
 }

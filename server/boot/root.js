@@ -15,13 +15,13 @@ module.exports = function (app) {
   var Post = app.models.Post;
   var StorePicture = app.models.StorePicture;
   var StoreFeedback = app.models.StoreFeedback;
-  var StoreFeedbackKeyword = app.models.StoreFeedbackKeyword;
+  var StoreKeyword = app.models.StoreKeyword;
   var PostPicture = app.models.PostPicture;
   var PostFeedback = app.models.PostFeedback;
-  var PostFeedbackKeyword = app.models.PostFeedbackKeyword;
+  var PostKeyword = app.models.PostKeyword;
 
-  var lbTables = ['user', 'CustomToken', 'Store', 'Post', 'StorePicture', 'StoreFeedback',
-      'StoreFeedbackKeyword','PostPicture','PostFeedback','PostFeedbackKeyword'
+  var lbTables = ['user', 'Store', 'Post','CustomToken' ,'StorePicture', 'StoreFeedback',
+      'StoreKeyword','PostPicture','PostFeedback','PostKeyword'
   ];
 
   mysql.autoupdate(lbTables, function (er) {

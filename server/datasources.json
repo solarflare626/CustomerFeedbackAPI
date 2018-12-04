@@ -4,23 +4,13 @@
     "connector": "memory"
   },
   "mysql": {
-    "host": "localhost",
-    "port": 3306,
-    "url": "mysql://root:root@localhost/mysql",
+    "host": "127.0.0.1",
+    "port": 27017,
+    "url": "mongodb://127.0.0.1:27017/customerfeedback",
     "database": "customerfeedback",
-    "password": "root",
-    "name": "mysql",
-    "user": "root",
-    "connector": "mysql"
-  },
-  "postgres": {
-    "host": "localhost",
-    "port": 5432,
-    "url": "postgres://postgres:postgres@localhost/customerfeedback",
-    "database": "cutomerfeedback",
-    "password": "postgres",
-    "name": "postgres",
-    "user": "postgres",
-    "connector": "postgresql"
+    "password": "",
+    "name": "mongodb",
+    "user": "",
+    "connector": "mongodb"
   }
 }
