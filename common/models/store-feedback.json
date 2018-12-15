@@ -19,15 +19,15 @@
       "type": "string",
       "required": false
     },
-    "sentiment-postive": {
+    "sentiment_postive": {
       "type": "number",
       "required": false
     },
-    "sentiment-nuetral": {
+    "sentiment_nuetral": {
       "type": "number",
       "required": false
     },
-    "sentiment-negative": {
+    "sentiment_negative": {
       "type": "number",
       "required": false
     }
