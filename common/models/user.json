@@ -12,20 +12,32 @@
     "verificationToken"
   ],
   "properties": {
+    "student_id": {
+      "type": "string",
+      "required": false
+    },
+    "firstname": {
+      "type": "string",
+      "required": false
+    },
+    "lastname": {
+      "type": "string",
+      "required": false
+    },
     "email": {
       "type": "string",
       "required": true
     },
-    "displayname": {
-      "type": "string",
-      "required": false
-    },
     "type": {
       "type": "string",
       "required": false,
-      "default": "normal"
+      "default": "customer"
     },
     "picture": {
+      "type": "string",
+      "required": false
+    },
+    "password": {
       "type": "string",
       "required": false
     }

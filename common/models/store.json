@@ -7,6 +7,10 @@
     "validateUpsert": true
   },
   "properties": {
+    "number": {
+      "type": "string",
+      "required": true
+    },
     "name": {
       "type": "string",
       "required": true
@@ -15,7 +19,11 @@
       "type": "string",
       "required": false
     },
-    "address": {
+    "location": {
+      "type": "string",
+      "required": false
+    },
+    "owner": {
       "type": "string",
       "required": false
     },

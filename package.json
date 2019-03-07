@@ -11,6 +11,7 @@
     "posttest": "npm run lint"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "google-auth-library": "^2.0.1",

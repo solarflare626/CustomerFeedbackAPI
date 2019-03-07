@@ -34,6 +34,6 @@ module.exports = function (app) {
     //mysqlDs.disconnect();
   });
 
-  delete app.models.user.validations.password;
+  // delete app.models.user.validations.password;
   delete app.models.user.validations.username;
 };
